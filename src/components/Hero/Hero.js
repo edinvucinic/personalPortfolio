@@ -6,6 +6,7 @@ import {
 } from "../../styles/GlobalComponents";
 import Button from "../../styles/GlobalComponents/Button";
 import { LeftSection } from "./HeroStyles";
+import Typist from "react-typist";
 
 const Hero = () => {
   const downloadCV = () => {
@@ -25,16 +26,21 @@ const Hero = () => {
   return (
     <Section row nopadding>
       <LeftSection>
-        <SectionTitle main center>
-          Welcome To <br />
-          My Personal Portfolio
-        </SectionTitle>
-        <SectionText>
-          "Hello and welcome! I'm a Frontend Developer diving into the world of
-          React and Next.js, whipping up apps that pack a punch. Let's connect
-          and explore how my skills can contribute to you and your team's
-          success."
-        </SectionText>
+        <Typist cursor={{ show: false }}>
+          <SectionTitle main center>
+            <Typist.Delay ms={500} />
+            Welcome To <br />
+            <Typist.Delay ms={300} />
+            My Personal Portfolio
+          </SectionTitle>
+          <SectionText>
+            <Typist.Delay ms={500} />
+            "Hello and welcome! I'm a Frontend Developer diving into the world
+            of React and Next.js, whipping up apps that pack a punch. Let's
+            connect and explore how my skills can contribute to you and your
+            team's success."
+          </SectionText>
+        </Typist>
         <Button onClick={downloadCV}>Get CV</Button>
       </LeftSection>
     </Section>

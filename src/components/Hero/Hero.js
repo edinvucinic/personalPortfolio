@@ -1,11 +1,28 @@
-import React from 'react';
+import React from "react";
+import {
+  Section,
+  SectionText,
+  SectionTitle,
+} from "../../styles/GlobalComponents";
+import Button from "../../styles/GlobalComponents/Button";
+import { LeftSection } from "./HeroStyles";
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
-import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
+const Hero = () => {
+  const downloadCV = () => {
+    // Create a link element
+    const link = document.createElement("a");
+    link.href = "/docs/mycv.pdf"; // Path to the CV file
+    link.download = "My_CV.pdf"; // File name when downloaded
 
-const Hero = (props) => (
-  <>
+    // Simulate click on the link to trigger download
+    document.body.appendChild(link);
+    link.click();
+
+    // Clean up after the download
+    document.body.removeChild(link);
+  };
+
+  return (
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
@@ -13,12 +30,15 @@ const Hero = (props) => (
           My Personal Portfolio
         </SectionTitle>
         <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+          "Hello and welcome! I'm a Frontend Developer diving into the world of
+          React and Next.js, whipping up apps that pack a punch. Let's connect
+          and explore how my skills can contribute to you and your team's
+          success."
         </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
+        <Button onClick={downloadCV}>Get CV</Button>
       </LeftSection>
     </Section>
-  </>
-);
+  );
+};
 
 export default Hero;

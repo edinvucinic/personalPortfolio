@@ -19,8 +19,8 @@ const Technologies = () => (
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked mostly with a HTML, CSS, JavaScript and React and I am
-      familiar and I worked with technologies like Node, Expressand MongoDB.
+      I've been working mostly with a HTML, CSS, JavaScript and React and I have
+      experience with technologies like Node, Express and MongoDB.
     </SectionText>
     <List>
       <ListItem>

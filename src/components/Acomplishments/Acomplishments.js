@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import {
   Section,
@@ -6,7 +6,6 @@ import {
   SectionText,
   SectionTitle,
 } from "../../styles/GlobalComponents";
-
 const StyledSection = styled.section`
   /* Your section styles */
 `;
@@ -30,15 +29,15 @@ const SkillBox = styled.div`
 
 const SkillTitle = styled.h3`
   /* Your skill title styles */
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 `;
 
 const ProgressBar = styled.div`
   width: 200px; /* Adjust width as needed */
-  height: 30px; /* Double the height */
+  height: 15px; /* Half the height */
   background-color: #eee;
-  border-radius: 15px;
-  margin-bottom: 20px; /* Increased space between bars */
+  border-radius: 7px;
+  margin-bottom: 10px; /* Adjust the space between bars */
   position: relative;
   overflow: hidden;
   cursor: pointer;
@@ -48,11 +47,11 @@ const Progress = styled.div`
   width: ${({ level }) => level}%; /* Set the width based on the skill level */
   height: 100%;
   background-color: #3498db; /* Change color based on the technology */
-  border-radius: 15px;
+  border-radius: 7px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px; /* Adjust font size as needed */
+  font-size: 10px; /* Adjust font size as needed */
   transition: width 1s linear; /* Transition for the loading effect */
 `;
 
@@ -76,20 +75,17 @@ const animateProgressBar = (progressBar, level) => {
 const Skills = () => {
   const skillsData = [
     { name: "HTML", level: 70 },
-    { name: "CSS", level: 60 },
-    { name: "JavaScript", level: 50 },
-    { name: "React.js", level: 40 },
-    { name: "Next.js", level: 30 },
+    { name: "CSS", level: 70 },
+    { name: "JavaScript", level: 60 },
+    { name: "React.js", level: 70 },
+    { name: "Next.js", level: 60 },
   ];
 
-  useEffect(() => {
-    const progressBars = document.querySelectorAll(".progress-bar");
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
-    progressBars.forEach((progressBar) => {
-      const level = parseInt(progressBar.getAttribute("data-level"));
-      animateProgressBar(progressBar, level);
-    });
-  }, []);
+  const handleHover = (index) => {
+    setHoveredIndex(index);
+  };
 
   return (
     <StyledSection>
@@ -98,13 +94,18 @@ const Skills = () => {
         {skillsData.map((skill, index) => (
           <SkillBox key={index}>
             <SkillTitle>{skill.name}</SkillTitle>
-            <ProgressBar>
+            <ProgressBar
+              onMouseEnter={() => handleHover(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
               <Progress
                 className="progress-bar"
                 data-level={skill.level}
-                style={{ width: "0%" }}
+                style={{
+                  width: hoveredIndex === index ? "0%" : `${skill.level}%`,
+                }}
               >
-                0%
+                {hoveredIndex === index ? "0%" : `${skill.level}%`}
               </Progress>
             </ProgressBar>
           </SkillBox>

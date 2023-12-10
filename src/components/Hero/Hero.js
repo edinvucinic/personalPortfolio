@@ -36,9 +36,9 @@ const Hero = () => {
           <SectionText>
             <Typist.Delay ms={500} />
             "Hello and welcome! I'm a Frontend Developer diving into the world
-            of React and Next.js, whipping up apps that pack a punch. Let's
-            connect and explore how my skills can contribute to you and your
-            team's success."
+            of React and Next.js, creating apps that pack a punch. Let's connect
+            and explore how my skills can contribute to you and your team's
+            success."
           </SectionText>
         </Typist>
         <Button onClick={downloadCV}>Get CV</Button>

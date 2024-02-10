@@ -21,10 +21,10 @@ import { projects } from "../../constants/constants";
 
 const Projects = () => {
   const imageUrls = [
-    "https://www.klix.ba/",
-    "https://www.vijesti.ba/",
-    "https://politicki.ba/",
-    "https://source.ba/",
+    "https://mybank-website.vercel.app/?#",
+    "https://my-bank-balance-tracker.vercel.app/",
+    "https://github.com/edinvucinic/fun_facts_app",
+    "https://github.com/edinvucinic/flinstagram_social_media_app",
   ];
 
   const githubRepos = [

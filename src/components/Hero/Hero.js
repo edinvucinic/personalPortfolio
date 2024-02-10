@@ -10,16 +10,13 @@ import Typist from "react-typist";
 
 const Hero = () => {
   const downloadCV = () => {
-    // Create a link element
     const link = document.createElement("a");
-    link.href = "/docs/mycv.pdf"; // Path to the CV file
-    link.download = "My_CV.pdf"; // File name when downloaded
+    link.href = "/documents/EdinVucinicCV02.pdf"; // File URL in the public/documents folder
+    link.download = "EdinVucinicCV02.pdf"; // File name when downloaded
 
-    // Simulate click on the link to trigger download
+    // Open system dialog for download
     document.body.appendChild(link);
     link.click();
-
-    // Clean up after the download
     document.body.removeChild(link);
   };
 
@@ -41,7 +38,7 @@ const Hero = () => {
             success."
           </SectionText>
         </Typist>
-        <Button onClick={downloadCV}>Get CV</Button>
+        <Button onClick={downloadCV}>Download CV</Button>
       </LeftSection>
     </Section>
   );

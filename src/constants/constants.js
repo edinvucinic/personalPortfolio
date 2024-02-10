@@ -1,18 +1,18 @@
 export const projects = [
   {
-    title: "MERN Memories",
+    title: "Fun Facts Appllication",
     description:
-      "Using React, Node.js, Express & MongoDB you'll learn how to build a Full Stack MERN Application - from start to finish. The App is called Memories and it is a simple social media app that allows users to post interesting events that happened in their lives.",
-    image: "/images/1.png",
-    tags: ["Mongo", "Express", "React", "Node"],
+      "This application allows users to post interesting facts from different topics, like Society, Science, Enterteinment etc. Users can vote using Interesting fact, Mind blowing fact or False fact button. THis application is built using Rreact and Next.js.",
+    image: "/images/1.JPG",
+    tags: ["ReactJS", "NextJS", "Supabase", "Node"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 0,
   },
   {
-    title: "E-Commerce",
+    title: "Restaurant landing page",
     description:
-      "While building it you're going to learn many advanced React & JavaScript topics, as well as how to use Stripe for card transactions. On top of that, at the end of the video, you will have this unique and complex webshop app that you will be able to add to your portfolio. And trust me, e-commerce applications are impressive.",
+      "This is landing page for restaurant, built with HTML, CSS, Javascript.",
     image: "/images/2.png",
     tags: ["React", "JavaScript"],
     source: "https://google.com",
@@ -20,9 +20,9 @@ export const projects = [
     id: 1,
   },
   {
-    title: "WebRTC App",
+    title: "Landing page for Software company ",
     description:
-      "This is a code repository for the corresponding YouTube video. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
+      "Coming soon. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
     image: "/images/3.jpg",
     tags: ["React", "WebRTC"],
     source: "https://google.com",
@@ -30,9 +30,9 @@ export const projects = [
     id: 2,
   },
   {
-    title: "Unichat",
+    title: "Landing page for  small business",
     description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
+      "Here is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
     image: "/images/4.jpg",
     tags: ["React", "ChatEngine", "Firebase"],
     source: "https://google.com",

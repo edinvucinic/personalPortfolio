@@ -23,15 +23,15 @@ const Projects = () => {
   const imageUrls = [
     "https://mybank-website.vercel.app/?#",
     "https://my-bank-balance-tracker.vercel.app/",
+    "https://capital-edge-rho.vercel.app/",
     "https://github.com/edinvucinic/fun_facts_app",
-    "https://github.com/edinvucinic/flinstagram_social_media_app",
   ];
 
   const githubRepos = [
+    "https://github.com/edinvucinic/BankingWebsite",
+    "https://github.com/edinvucinic/-MyBank-Balance-Tracker",
+    "https://github.com/edinvucinic/LandingPageInvestmentFirm",
     "https://github.com/edinvucinic/fun_facts_app",
-    "https://github.com/edinvucinic/appointments01",
-    "https://github.com/edinvucinic/Personal_Portfolio_not_finished",
-    "https://github.com/edinvucinic/Flask_Market1",
   ];
 
   return (

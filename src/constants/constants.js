@@ -1,40 +1,41 @@
 export const projects = [
   {
-    title: "Fun Facts Appllication",
+    title: "Bank Central App",
     description:
-      "This application allows users to post interesting facts from different topics, like Society, Science, Enterteinment etc. Users can vote using Interesting fact, Mind blowing fact or False fact button. THis application is built using Rreact and Next.js.",
+      ", This project introduces a streamlined landing page for a modern banking experience, emphasizing simplicity and elegance. Users can expect a seamless interface that provides easy access to essential banking services. With its minimalist design and intuitive layout, navigating through account information, transactions, and financial tools becomes effortless. Powered by HTML, CSS, and JavaScript, this platform ensures a smooth and responsive browsing experience across devices.",
     image: "/images/1.JPG",
-    tags: ["ReactJS", "NextJS", "Supabase", "Node"],
+    tags: ["HTML", "CSS", "JavaScript"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 0,
   },
   {
-    title: "Restaurant landing page",
+    title: "Expendio-Asset Tracker App",
     description:
-      "This is landing page for restaurant, built with HTML, CSS, Javascript.",
+      " This   application is designed to streamline your financial management. Expendio efficiently tracks your expenses, deposits, and overall account status while offering essential banking services like loan requests, money transfers, and account closure. Built with HTML, CSS, and JavaScript, it ensures a user-friendly interface for seamless banking transactions. Use 'js' for the username and '1111' for the password when logging into the application.",
+
     image: "/images/2.png",
-    tags: ["React", "JavaScript"],
+    tags: ["HTML", "CSS", "JavaScript"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 1,
   },
   {
-    title: "Landing page for Software company ",
+    title: "Landing page for Investment company ",
     description:
-      "Coming soon. In this tutorial, we're going to build and deploy a React Video Chat Application using WebRTC.",
-    image: "/images/3.jpg",
-    tags: ["React", "WebRTC"],
+      "This landing page showcases Capital Edge, an investment company. This simple yet effective website is created using HTML, CSS, and JavaScript. Its clean, intuitive design ensures smooth navigation and user-friendly experience. ",
+    image: "/images/3.PNG",
+    tags: ["HTML", "CSS", "JavaScript"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 2,
   },
   {
-    title: "Landing page for  small business",
+    title: "React.js and Supabase Full Stack App",
     description:
-      "Here is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
+      "Here is a code repository for Fun Facts full stack app . In this project , I created  simple full stack app that allows users  to create new posts, delete posts, and to vote with like, dislike or upvote button.",
     image: "/images/4.jpg",
-    tags: ["React", "ChatEngine", "Firebase"],
+    tags: ["React", "Supabase", "JavaScript"],
     source: "https://google.com",
     visit: "https://google.com",
     id: 3,

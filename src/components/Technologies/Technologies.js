@@ -20,7 +20,7 @@ const Technologies = () => (
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
       I've been working mostly with a HTML, CSS, JavaScript and React and I have
-      experience with technologies like Node, Express and MongoDB.
+      experience with technologies like Node, Supabase and MongoDB.
     </SectionText>
     <List>
       <ListItem>
@@ -42,7 +42,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Worked with Python, Flask, Node and Express.
+            Worked with Python, Flask, Node and Supabase.
           </ListParagraph>
         </ListContainer>
       </ListItem>

@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "Bank Central App",
     description:
-      ", This project introduces a streamlined landing page for a modern banking experience, emphasizing simplicity and elegance. Users can expect a seamless interface that provides easy access to essential banking services. With its minimalist design and intuitive layout, navigating through account information, transactions, and financial tools becomes effortless. Powered by HTML, CSS, and JavaScript, this platform ensures a smooth and responsive browsing experience across devices.",
+      " This project introduces a streamlined landing page for a modern banking experience, emphasizing simplicity and elegance. Users can expect a seamless interface that provides easy access to essential banking services. With its minimalist design and intuitive layout, navigating through account information, transactions, and financial tools becomes effortless. Powered by HTML, CSS, and JavaScript, this platform ensures a smooth and responsive browsing experience across devices.",
     image: "/images/1.JPG",
     tags: ["HTML", "CSS", "JavaScript"],
     source: "https://google.com",
